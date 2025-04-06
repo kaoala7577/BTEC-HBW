@@ -33,3 +33,19 @@ body {
   .hero-header-text h1, p {
     margin-bottom: 2%;
   }
+
+  .logo-scroll {
+    height: 125px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .logos {
+    width:  max-content;
+  }
+
+  .logo-scroll img {
+    width: 125px;
+    border-radius: 50%;
+    padding: 10px;
+  }
