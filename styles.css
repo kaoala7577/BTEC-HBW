@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  
+.navbar-brand {
+    font-weight: bold;
+  }
+
+  .hero-image {
+    width:100%;
+    min-height:500px;
+    height:fit-content;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    position:relative;
+  }
+  
+  .hero-header-text {
+    text-align: center;
+    position: relative;
+    color:white;
+    text-shadow: 0 0 5px #333;
+    max-width: 80%;
+  }
+
+  .hero-header-text h1 {
+    margin-bottom: 2%;
+  }
