@@ -4,18 +4,6 @@ let containerWidth = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
     cloneLogos(logosContainer);
-
-    // scroll animation
-    let scrollPosition = 0;
-    function scroll() {
-        scrollPosition -= 0.5; // adjust for scroll speed (lower=slower)
-
-        // reset position when first set of images are out of view
-        if (Math.abs(scrollPosition) >= containerWidth) scrollPosition = 0;
-
-        logosContainer.style.transform = `translateX(${Math.ceil(scrollPosition)}px)`;  // use ceil to avoid subpixel rendering issues
-        requestAnimationFrame(scroll);
-    }
     scroll();
 });
 
@@ -23,11 +11,25 @@ window.addEventListener("resize", () => {
     cloneLogos(logosContainer); // reclone on resize to adjust for new window size
 });
 
+// logo scroll animation
+let scrollPosition = 0;
+function scroll() {
+    scrollPosition -= 0.5; // adjust for scroll speed (lower=slower)
+
+    // reset position when first set of images are out of view
+    if (Math.abs(scrollPosition) >= containerWidth) scrollPosition = 0;
+
+    logosContainer.style.transform = `translateX(${Math.ceil(scrollPosition)}px)`;  // use ceil to avoid subpixel rendering issues
+    requestAnimationFrame(scroll);
+}
+
 // clones images to create seamless scroll, assumes consistent image width
 const cloneLogos = container => {
     let images = Array.from(container.children);
     const imgWidth = images[0].getBoundingClientRect().width;
-    containerWidth = imgWidth * originalLogosNum;
+    const imgMargin = parseFloat(getComputedStyle(images[0]).marginRight) * 2; // margin on both sides
+    const imgTotalWidth = imgWidth + imgMargin;
+    containerWidth = imgTotalWidth * originalLogosNum;
     
     // determine number of clones needed
     const cloneNum = Math.ceil(window.innerWidth / containerWidth);

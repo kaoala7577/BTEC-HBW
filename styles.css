@@ -3,7 +3,7 @@ body {
     background-color: #f8f9fa;
     color: #343a40;
   }
-  
+
 .navbar-brand {
     font-weight: bold;
   }
@@ -20,7 +20,7 @@ body {
     border-image: fill 0
       linear-gradient(to right, rgba(0, 255, 153, 0.5), rgba(0, 161, 254, 0.5));
   }
-  
+
   .hero-header-text {
     text-align: center;
     position: relative;
@@ -30,22 +30,78 @@ body {
     margin-top: 1%;
   }
 
-  .hero-header-text h1, p {
-    margin-bottom: 2%;
-  }
+.hero-header-text h1, p {
+  margin-bottom: 2%;
+}
 
-  .logo-scroll {
-    height: 125px;
-    position: relative;
-    overflow: hidden;
-  }
+.logo-scroll {
+  height: max-content;
+  position: relative;
+  overflow: hidden;
+}
 
-  .logos {
-    width:  max-content;
-  }
+.logos {
+  width:  max-content;
+}
 
-  .logo-scroll img {
-    width: 125px;
-    border-radius: 50%;
-    padding: 10px;
-  }
+.circle img {
+  object-fit: cover;
+  overflow:hidden;
+  height: max-content;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #333;
+  margin: 5px;
+}
+
+.logos img {
+  height: 125px;
+  margin: 10px;
+}
+
+.testimonial img {
+  height: 200px;
+}
+
+.quote:before,
+.quote:after{
+  font-family:"Font Awesome 5 Free"; font-weight: 900;
+  text-shadow: rgba(52, 58, 64,0.5) 1px 1px 2px;
+  font-size: 17px;
+  position: relative;
+}
+.quote:before{
+  content: "\f10d";
+  color: #00ff99;
+  margin-right: 5px;
+  top: 0;
+  left: 0;
+}
+.quote:after{
+  content: "\f10e";
+  color: #00a1fe;
+  margin-left: 5px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+.secondary-background {
+  background-color: #C2FFEF;
+}
+
+
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+gmp-map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

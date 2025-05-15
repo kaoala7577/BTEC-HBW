@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hot Beans Web</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYz0nRt_YVh8p7WL5KFr_UW2UDEu3M0AU&callback=console.debug&libraries=maps,marker&v=beta"></script>
+  <script src="https://kit.fontawesome.com/d963e06dca.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img src="assets/logo transparent.png" alt="Logo" width="auto" height="40" class="d-inline-block align-text-middle">
+        <img src="assets/images/logo transparent.png" alt="Logo" width="auto" height="40" class="d-inline-block align-text-middle">
         Hot Beans Web
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -39,48 +41,93 @@
     </div>
   </nav>
 
-  <div class="hero-image d-flex justify-content-center align-items-center"
-  style="background-image:url('assets/Offices.jpg')">
-    <section class="hero-header-text">
+  <header class="hero-image d-flex justify-content-center align-items-center"
+  style="background-image:url('assets/images/Offices.jpg')">
+    <div class="hero-header-text">
       <h1>Heading</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id rutrum enim, ac lacinia sem. Nam massa tellus, aliquam id porta quis, bibendum ut lacus. Nulla vitae facilisis mi. Maecenas malesuada, lorem in euismod bibendum, nisi nibh suscipit quam, et luctus velit justo id massa. Curabitur egestas odio risus, eu vulputate mi gravida eget. Sed et hendrerit leo, non tempor metus. Proin id mollis lectus, vel auctor nibh. In in dolor risus. Praesent accumsan dui quam, at elementum nibh porttitor et. Fusce viverra in turpis id mattis. Quisque ut dapibus risus. Donec sapien eros, pellentesque in urna eu, posuere volutpat est. Sed efficitur turpis non orci suscipit varius non iaculis ex. Etiam sagittis mi eros, sed consequat augue hendrerit in.</p>
       <a href="about.html" class="btn btn-outline-light" role="button">Find out more</a>
-    </section>
-  </div>
-
-  <div class="logo-scroll">
-    <div class="logos d-flex">
-      <img src="assets/logo.png">
-      <img src="assets/Offices.jpg">
-      <img src="assets/logo.png">
-      <img src="assets/Offices.jpg">
-      <img src="assets/logo.png">
-      <img src="assets/Offices.jpg">
-      <img src="assets/logo.png">
-      <img src="assets/Offices.jpg">
-      <img src="assets/logo.png">
-      <img src="assets/Offices.jpg">
-      <img src="assets/logo.png">
     </div>
-  </div>
+  </header>
 
-  
-  <div class="container mt-4">
-    <h1>Welcome to Bootstrap</h1>
-    <p class="lead">This is a simple introduction to using Bootstrap for web design.</p>
+  <section class="logo-scroll secondary-background">
+    <div class="logos d-flex circle">
+        <img src="assets/placeholders/placeholder1.jpg">
+        <img src="assets/placeholders/placeholder2.jpg">
+        <img src="assets/placeholders/placeholder3.jpg">
+        <img src="assets/placeholders/placeholder4.jpg">
+        <img src="assets/placeholders/placeholder5.jpg">
+        <img src="assets/placeholders/placeholder6.jpg">
+        <img src="assets/placeholders/placeholder7.jpg">
+        <img src="assets/placeholders/placeholder8.jpg">
+    </div>
+  </section>
 
-    <!-- Task 2: Two-Column Layout -->
-    <div class="row">
-      <div class="col-md-6">
-        <img src="https://via.placeholder.com/150" class="img-fluid" alt="Image 1">
-        <p>Column 1 Text</p>
+  <section id="carouselReviewIndicators" class="testimonial carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselReviewIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselReviewIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselReviewIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner p-5">
+      <h1 class="text-center">Reviews</h1>
+      <div class="carousel-item active">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-2 d-flex justify-content-center align-items-center circle pb-3 pb-lg-0">
+            <img src="assets/placeholders/placeholder1.jpg" alt="...">
+          </div>
+          <div class="col-lg-8 row-cols-1 my-auto justify-content-center align-items-center text-center text-lg-start">
+            <p class="quote text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui leo, lobortis ut volutpat vitae, imperdiet a lectus. Nulla quis gravida enim. Sed tempus felis sem, at porttitor dolor volutpat vitae. In est urna, efficitur consectetur posuere ac, iaculis non mauris. Aliquam ante enim, accumsan at sapien vel, fermentum ullamcorper risus. Morbi dictum molestie purus, quis fringilla ante molestie vitae. Duis aliquam, diam et facilisis vulputate, odio enim mollis ipsum, quis dapibus turpis diam et nisi.
+            </p>
+            <p class="mb-0">Example Name</p>
+            <p class="m-0 pt-0">Example title</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-        <img src="https://via.placeholder.com/150" class="img-fluid" alt="Image 2">
-        <p>Column 2 Text</p>
+      <div class="carousel-item">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-2 d-flex justify-content-center align-items-center circle pb-3 pb-lg-0">
+              <img src="assets/placeholders/placeholder2.jpg" alt="...">
+          </div>
+          <div class="col-lg-8 row-cols-1 my-auto justify-content-center align-items-center text-center text-lg-start">
+            <p class="quote text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui leo, lobortis ut volutpat vitae, imperdiet a lectus. Nulla quis gravida enim. Sed tempus felis sem, at porttitor dolor volutpat vitae. In est urna, efficitur consectetur posuere ac, iaculis non mauris. Aliquam ante enim, accumsan at sapien vel, fermentum ullamcorper risus. Morbi dictum molestie purus, quis fringilla ante molestie vitae. Duis aliquam, diam et facilisis vulputate, odio enim mollis ipsum, quis dapibus turpis diam et nisi.
+            </p>
+            <p class="mb-0">Example Name</p>
+            <p class="m-0 pt-0">Example title</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-2 d-flex justify-content-center align-items-center circle pb-3 pb-lg-0">
+            <img src="assets/placeholders/placeholder3.jpg" alt="...">
+          </div>
+          <div class="col-lg-8 row-cols-1 my-auto justify-content-center align-items-center text-center text-lg-start">
+            <p class="quote text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui leo, lobortis ut volutpat vitae, imperdiet a lectus. Nulla quis gravida enim. Sed tempus felis sem, at porttitor dolor volutpat vitae. In est urna, efficitur consectetur posuere ac, iaculis non mauris. Aliquam ante enim, accumsan at sapien vel, fermentum ullamcorper risus. Morbi dictum molestie purus, quis fringilla ante molestie vitae. Duis aliquam, diam et facilisis vulputate, odio enim mollis ipsum, quis dapibus turpis diam et nisi.
+            </p>
+            <p class="mb-0">Example Name</p>
+            <p class="m-0 pt-0">Example title</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviewIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselReviewIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+
+  <gmp-map center="52.578609466552734,-0.2391512244939804" zoom="14" map-id="DEMO_MAP_ID">
+    <gmp-advanced-marker position="52.578609466552734,-0.2391512244939804" title="My location"></gmp-advanced-marker>
+  </gmp-map>
+
 
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
