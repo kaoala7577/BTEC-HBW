@@ -1,12 +1,20 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
+    background-image: linear-gradient(to right, rgba(0, 255, 153, 0.5), rgba(0, 161, 254, 0.5));
     color: #343a40;
   }
+
+.secondary-background {
+  box-shadow: inset 0 0 0 100vw rgba(255,255,255,.3);
+}
 
 .navbar-brand {
     font-weight: bold;
   }
+.navbar {
+  background-color: #00615F;
+}
 
   .hero-image {
     width:100%;
@@ -86,11 +94,23 @@ body {
   right: 0;
 }
 
-.secondary-background {
-  background-color: #C2FFEF;
+/*
+change this to change to 2 slides on small
+*/
+@media screen and (min-width: 768px) {
+  #carouselTeamIndicators .carousel-inner{
+    display: flex;
+  }
+  #carouselTeamIndicators .carousel-item{
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%/3);
+  }
 }
 
-
+#carouselTeamIndicators .carousel-inner{
+  padding: 1em;
+}
 
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */

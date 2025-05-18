@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="assets/images/logo transparent.png" alt="Logo" width="auto" height="40" class="d-inline-block align-text-middle">
@@ -34,7 +34,7 @@
             <a class="nav-link" href="training.html">Training</a>
           </li>
           <li class="nav-item">
-            <a href="training.html#Apply" class="btn btn-outline-primary" role="button">Apply Now!</a>
+            <a href="training.html#Apply" class="btn btn-outline-light" role="button">Apply Now!</a>
           </li>
         </ul>
       </div>
@@ -43,14 +43,14 @@
 
   <header class="hero-image d-flex justify-content-center align-items-center"
   style="background-image:url('assets/images/Offices.jpg')">
-    <div class="hero-header-text">
+    <div class="hero-header-text py-3">
       <h1>Heading</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id rutrum enim, ac lacinia sem. Nam massa tellus, aliquam id porta quis, bibendum ut lacus. Nulla vitae facilisis mi. Maecenas malesuada, lorem in euismod bibendum, nisi nibh suscipit quam, et luctus velit justo id massa. Curabitur egestas odio risus, eu vulputate mi gravida eget. Sed et hendrerit leo, non tempor metus. Proin id mollis lectus, vel auctor nibh. In in dolor risus. Praesent accumsan dui quam, at elementum nibh porttitor et. Fusce viverra in turpis id mattis. Quisque ut dapibus risus. Donec sapien eros, pellentesque in urna eu, posuere volutpat est. Sed efficitur turpis non orci suscipit varius non iaculis ex. Etiam sagittis mi eros, sed consequat augue hendrerit in.</p>
       <a href="about.html" class="btn btn-outline-light" role="button">Find out more</a>
     </div>
   </header>
 
-  <section class="logo-scroll secondary-background">
+  <section class="logo-scroll">
     <div class="logos d-flex circle">
         <img src="assets/placeholders/placeholder1.jpg">
         <img src="assets/placeholders/placeholder2.jpg">
@@ -63,7 +63,7 @@
     </div>
   </section>
 
-  <section id="carouselReviewIndicators" class="testimonial carousel slide">
+  <section id="carouselReviewIndicators" class="testimonial carousel slide secondary-background">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselReviewIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselReviewIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -80,8 +80,8 @@
             <p class="quote text-muted">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui leo, lobortis ut volutpat vitae, imperdiet a lectus. Nulla quis gravida enim. Sed tempus felis sem, at porttitor dolor volutpat vitae. In est urna, efficitur consectetur posuere ac, iaculis non mauris. Aliquam ante enim, accumsan at sapien vel, fermentum ullamcorper risus. Morbi dictum molestie purus, quis fringilla ante molestie vitae. Duis aliquam, diam et facilisis vulputate, odio enim mollis ipsum, quis dapibus turpis diam et nisi.
             </p>
-            <p class="mb-0">Example Name</p>
-            <p class="m-0 pt-0">Example title</p>
+            <h5 class="card-title">Example name</h5>
+            <p class="card-text">Example company</p>
           </div>
         </div>
       </div>
@@ -94,8 +94,8 @@
             <p class="quote text-muted">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui leo, lobortis ut volutpat vitae, imperdiet a lectus. Nulla quis gravida enim. Sed tempus felis sem, at porttitor dolor volutpat vitae. In est urna, efficitur consectetur posuere ac, iaculis non mauris. Aliquam ante enim, accumsan at sapien vel, fermentum ullamcorper risus. Morbi dictum molestie purus, quis fringilla ante molestie vitae. Duis aliquam, diam et facilisis vulputate, odio enim mollis ipsum, quis dapibus turpis diam et nisi.
             </p>
-            <p class="mb-0">Example Name</p>
-            <p class="m-0 pt-0">Example title</p>
+            <h5 class="card-title">Example name</h5>
+            <p class="card-text">Example company</p>
           </div>
         </div>
       </div>
@@ -108,8 +108,8 @@
             <p class="quote text-muted">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui leo, lobortis ut volutpat vitae, imperdiet a lectus. Nulla quis gravida enim. Sed tempus felis sem, at porttitor dolor volutpat vitae. In est urna, efficitur consectetur posuere ac, iaculis non mauris. Aliquam ante enim, accumsan at sapien vel, fermentum ullamcorper risus. Morbi dictum molestie purus, quis fringilla ante molestie vitae. Duis aliquam, diam et facilisis vulputate, odio enim mollis ipsum, quis dapibus turpis diam et nisi.
             </p>
-            <p class="mb-0">Example Name</p>
-            <p class="m-0 pt-0">Example title</p>
+            <h5 class="card-title">Example name</h5>
+            <p class="card-text">Example company</p>
           </div>
         </div>
       </div>
@@ -119,6 +119,48 @@
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselReviewIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+
+  <section id="carouselTeamIndicators" class="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselTeamIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselTeamIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselTeamIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="p-5">
+      <h1 class="text-center">Meet the Team</h1>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="circle justify-content-center text-center p-2">
+            <img src="assets/images/Daniel_Lecroy.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Daniel Lecroy</h5>
+            <p class="card-text">Front-End Engineer</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="circle justify-content-center text-center p-2">
+            <img src="assets/images/Li Chang.PNG" class="card-img-top" alt="...">
+            <h5 class="card-title">Li Chang</h5>
+            <p class="card-text">Web Accessibility Specialist</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="circle justify-content-center text-center p-2">
+            <img src="assets/images/Rosa_DeCastello.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Rosa DeCastello</h5>
+            <p class="card-text">Lead Web Designer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTeamIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselTeamIndicators" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>

@@ -49,3 +49,28 @@ const cloneLogos = container => {
         });
     }
 }
+
+// multi item carousel for team section
+const carousel = document.getElementById('carouselTeamIndicators');
+carousel.addEventListener('slide.bs.carousel', event => {
+    /*
+        CC 2.0 License Iatek LLC 2018 - Attribution required
+    */
+    const carouselInner = carousel.querySelector('.carousel-inner');
+    const items = Array.from(carousel.querySelectorAll('.carousel-item'));
+    const relatedTarget = event.relatedTarget;
+    const idx = items.indexOf(relatedTarget);
+    const itemsPerSlide = 3;
+    const totalItems = items.length;
+
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+        const it = itemsPerSlide - (totalItems - idx);
+        for (let i = 0; i < it; i++) {
+            if (event.direction === "left") {
+                carouselInner.appendChild(items[i]);
+            } else {
+                carouselInner.appendChild(items[0]);
+            }
+        }
+    }
+});
