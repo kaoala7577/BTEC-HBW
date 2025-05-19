@@ -9,11 +9,63 @@ body {
   box-shadow: inset 0 0 0 100vw rgba(255,255,255,.3);
 }
 
+
+.logo {
+  margin: 2px 0;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.logo h1 {
+  color: white;
+  font-weight: bold;;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.nav-link {
+  position: relative;
+}
+@media (max-width: 991px) {
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+    border-bottom: 1px solid #505D6B;
+    width: 98%;
+    margin: 0;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+address a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.address {
+  line-height: 220%;
+}
+
+section {
+  padding: 3rem;
+}
+
 .navbar-brand {
     font-weight: bold;
   }
 .navbar {
-  background-color: #00615F;
+  background-color: #2c3e50;
 }
 
   .hero-image {
@@ -35,7 +87,7 @@ body {
     color:white;
     text-shadow: 0 0 5px #333;
     max-width: 80%;
-    margin-top: 1%;
+    margin: 1% 0;
   }
 
 .hero-header-text h1, p {
@@ -56,6 +108,7 @@ body {
   object-fit: cover;
   overflow:hidden;
   height: max-content;
+  max-width: 75vw;
   aspect-ratio: 1/1;
   border-radius: 50%;
   box-shadow: 0 0 5px #333;
@@ -71,27 +124,48 @@ body {
   height: 200px;
 }
 
+
 .quote:before,
-.quote:after{
+.quote:after,
+.phone:before,
+.email:before{
   font-family:"Font Awesome 5 Free"; font-weight: 900;
   text-shadow: rgba(52, 58, 64,0.5) 1px 1px 2px;
   font-size: 17px;
   position: relative;
 }
-.quote:before{
-  content: "\f10d";
-  color: #00ff99;
+.quote:before,
+.phone:before,
+.email:before {
   margin-right: 5px;
   top: 0;
   left: 0;
 }
 .quote:after{
   content: "\f10e";
-  color: #00a1fe;
   margin-left: 5px;
-  position: relative;
   bottom: 0;
   right: 0;
+}
+
+.quote:before,
+.phone:before {
+  color: #00ff99;
+}
+
+.quote:after,
+.email:before {
+  color: #00a1fe;
+}
+
+.quote:before {
+  content: "\f10d";
+}
+.phone:before{
+  content: "\f095";
+}
+.email:before{
+  content: "\f0e0";
 }
 
 /*
@@ -112,10 +186,55 @@ change this to change to 2 slides on small
   padding: 1em;
 }
 
+#carouselTeamIndicators img{
+  transition: 0.3s ease-in-out;
+}
+#carouselTeamIndicators img:hover{
+  transform: scale(1.05);
+}
+
+/*
+social media icons
+*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align:center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+/* Instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+/* Linkedin */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
 gmp-map {
-  height: 100%;
+  height: 45vh;
+  max-height: 350px;
 }
 
 /* Optional: Makes the sample page fill the window. */
