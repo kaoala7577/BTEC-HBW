@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Beans Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYz0nRt_YVh8p7WL5KFr_UW2UDEu3M0AU&callback=console.debug&libraries=maps,marker&v=beta"></script>
+    <script src="https://kit.fontawesome.com/d963e06dca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg px-0 px-sm-5" data-bs-theme="dark">
+    <div class="container-fluid px-4">
+        <div class="d-flex justify-content-center text-center">
+            <a class="d-flex logo align-items-center" href="index.html">
+                <img src="assets/images/logo transparent.png" alt="Logo" class="d-inline-block">
+                <h1 class="d-none d-sm-inline-block">Hot Beans Web</h1>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end text-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="careers.html">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="training.html">Training</a>
+                </li>
+                <li class="nav-item py-2 ps-lg-3 py-lg-0">
+                    <a href="careers.html#apply" class="btn btn-outline-light" role="button">Apply Now!</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-image d-flex justify-content-center align-items-center"
+        style="background-image:url('assets/images/Offices.jpg'); min-height: 500px;">
+    <div class="hero-header-text py-3">
+        <h1>Heading</h1>
+        <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id rutrum enim, ac lacinia
+            sem. Nam massa tellus, aliquam id porta quis, bibendum ut lacus. Nulla vitae facilisis mi. Maecenas
+            malesuada, lorem in euismod bibendum, nisi nibh suscipit quam, et luctus velit justo id massa. Curabitur
+            egestas odio risus, eu vulputate mi gravida eget. Sed et hendrerit leo, non tempor metus. Proin id mollis
+            lectus, vel auctor nibh. In in dolor risus. Praesent accumsan dui quam, at elementum nibh porttitor et.
+            Fusce viverra in turpis id mattis. Quisque ut dapibus risus. Donec sapien eros, pellentesque in urna eu,
+            posuere volutpat est. Sed efficitur turpis non orci suscipit varius non iaculis ex. Etiam sagittis mi eros,
+            sed consequat augue hendrerit in.</p>
+        <a href="#apply" class="btn btn-outline-light" role="button">Apply now!</a>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <h1 class="text-center">Open positions</h1>
+        <div class="row mt-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body" id="designerJob">
+                        <h5 class="card-title text-center">Web Designer</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary text-center">Hot Beans Web - Peterborough PE1<br>£24,000 -
+                            £30,000 a year - Full-time, Permanent</h6>
+                        <p class="card-text collapse" id="designerSummary">
+                            You'll be involved in the technical and graphical aspects of pages and will determine the look of the website as well as how it works. You may also be responsible for the maintenance of an existing site.<br>
+                            The term web developer is sometimes used interchangeably with web designer, but this is misguided. Web developing is a more specialist role, focusing on the back-end development of a website, using programming languages to make the web design a reality that works well.<br>
+                            The growth in touchscreen phones and tablet devices has dictated a new way of designing websites, with the web designer needing to ensure that web pages are responsive no matter what type of device is being used. Therefore, the need to test websites at different stages of design and on a variety of devices, has become an important aspect of the job.<br>
+                            We are seeking a talented Web Designer to work with our team of programmers, and to join our ever-expanding creative team.<br>
+                            <br>
+                            You will:<br>
+                            Be working on a multitude of diverse creative projects for different audiences and markets.<br>
+                            Will be responsible for the production of digital assets and website designs.<br>
+                            Execute all visual design stages from concept to final hand-off to engineering<br>
+                            Conceptualize original website design ideas that bring simplicity and user friendliness to complex roadblocks<br>
+                            Create wireframes, storyboards, user flows, process flows and site maps to communicate interaction and design ideas<br>
+                            Present and defend designs and key deliverables to peers and executive level stakeholders<br>
+                            Establish and promote design guidelines, best practices and standards<br>
+                            <br>
+                            Essentials:<br>
+                            Proficiency in Photoshop, Illustrator or other visual design and wire-framing tools<br>
+                            Proficiency in HTML, CSS and JavaScript for rapid prototyping<br>
+                            Experience working in an Agile/Scrum development process<br>
+                            Excellent visual design skills with sensitivity to user-system interaction<br>
+                            Ability to solve problems creatively and effectively<br>
+                            Up-to-date with the latest Web trends, techniques and technologies<br>
+                            Proven experience as a Digital / Web Designer – ideally with marketing agency experience. A portfolio of work will be required pre-interview.<br>
+                            High level of proficiency in Adobe Creative Suite (Photoshop, InDesign, Illustrator and XD).<br>
+                            Solid experience in creating wireframes, storyboards, user flows, process flows and site maps<br>
+                            A great team player.<br>
+                            Strong verbal and written communication skills.<br>
+                            High level of attention to detail and ability to stick to brand guidelines.<br>
+                            Proven ability to initiate and manage projects, including working to tight deadlines and managing your own workloads.<br>
+                            Demonstrable passion for new technologies and design trends.<br>
+                            <br>
+                            Desirable<br>
+                            Experience using Figma.<br>
+                            Experience with client-facing communications.<br>
+                            Experience of UX / UI Research and Implementation<br>
+                            <br>
+                            What we offer?<br>
+                            Competitive salary.<br>
+                            Additional Holiday to be taken on your birthday.<br>
+                            Company Bonus schemes.<br>
+                            Flexible working – 1 day per week guaranteed from home, if desired.<br>
+                            Regular team outings and socials.<br>
+                            A relaxed, fun and dynamic working environment<br>
+                            <br>
+                            Job Types: Full-time, Permanent<br>
+                            Salary: £24,000.00-£30,000.00 per year<br>
+                            Additional pay:<br>
+                            Bonus scheme<br>
+                            Performance bonus<br>
+                            Yearly bonus<br>
+                            <br>
+                            Benefits:<br>
+                            Casual dress<br>
+                            Company events<br>
+                            Work from home<br>
+                            <br>
+                            Schedule:<br>
+                            Monday to Friday
+                        </p>
+                        <a class="collapsed btn btn-outline-primary" data-bs-toggle="collapse" href="#designerSummary" aria-expanded="false" aria-controls="designerSummary"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body" id="developerJob">
+                        <h5 class="card-title text-center">Web Developer</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary text-center">Hot Beans Web - Peterborough PE1<br>£28,000 -
+                            £35,000 a year - Full-time, Permanent</h6>
+                        <p class="card-text collapse" id="developerSummary">
+                            We are now looking to build our in-house systems development team with the appointment of a junior web developer.<br>
+                            The successful candidate will help develop  back and front-end systems for our clients including eCommerce and B2B systems where you can see your ideas come to life.<br>
+                            As a small development team, you will have to opportunity to work across multiple technical domains developing a breadth of skills.<br>
+                            <br>
+                            You will:<br>
+                            Your primary task as a web developer will be to create reliable and high-performing web-based applications and services.<br>
+                            Focusing solely on the underlying software and databases and working with other teams on the interface and visual design.<br>
+                            Establish and promote design guidelines, best practices and standards<br>
+                            <br>
+                            Essentials:<br>
+                            Experience with HTML, CSS, & JavaScript<br>
+                            Exposure or Experience with one or more procedural programming languages, such as PHP, Java, C# (.Net), Python, CFML.<br>
+                            Exposure or Experience with one or more associated technologies:<br>
+                            Database technologies (SQL Server, MySQL), Windows Server or Linux Distributions, Development Tools, (IDEs, CLIs, Toolchains), Git (Or another VCS)<br>
+                            An Organised and Pragmatic approach to Solving Problems.<br>
+                            The ability to work as part of a team including both technical and non-technical members.<br>
+                            Proven ability to initiate and manage projects, including working to tight deadlines and managing your own workloads.<br>
+                            Demonstrable passion for new technologies and design trends.<br>
+                            <br>
+                            Desirable<br>
+                            In addition to the above the Ideal candidate would have experience working with the Salesforce platform.<br>
+                            <br>
+                            What we offer?<br>
+                            Competitive salary.<br>
+                            Additional Holiday to be taken on your birthday.<br>
+                            Company Bonus schemes.<br>
+                            Flexible working – 1 day per week guaranteed from home, if desired.<br>
+                            Regular team outings and socials.<br>
+                            A relaxed, fun and dynamic working environment<br>
+                            <br>
+                            Job Types: Full-time, Permanent<br>
+                            Salary: £24,000.00-£30,000.00 per year<br>
+                            Additional pay:<br>
+                            Bonus scheme<br>
+                            Performance bonus<br>
+                            Yearly bonus<br>
+                            <br>
+                            Benefits:<br>
+                            Casual dress<br>
+                            Company events<br>
+                            Work from home<br>
+                            <br>
+                            Schedule:<br>
+                            Monday to Friday<br>
+                        </p>
+                        <a class="collapsed btn btn-outline-primary" data-bs-toggle="collapse" href="#developerSummary" aria-expanded="false" aria-controls="developerSummary"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="apply" class="secondary-background">
+    <div class="container">
+        <h1 class="text-center">Apply now!</h1>
+        <div class="card mt-4">
+            <div class="card-body">
+                <form>
+                    <div class="row g-3 justify-content-center p-2">
+                        <div class="col-6 required">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="John" aria-label="First name" required>
+                        </div>
+                        <div class="col-6 required">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Smith" aria-label="Last name" required>
+                        </div>
+                        <div class="col-12 required">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="example@email.co.uk" aria-label="Email" required>
+                        </div>
+                        <div class="col-12 required">
+                            <label for="jobTitle" class="form-label">Job title</label>
+                            <select id="jobTitle" class="form-select" aria-label="Job title" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option value="Web designer">Web designer</option>
+                                <option value="Web developer">Web developer</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="coverLetter" class="form-label">Cover Letter</label>
+                            <textarea class="form-control" id="coverLetter" rows="3"></textarea>
+                        </div>
+                        <div class="col-12 required">
+                            <label for="formFile" class="form-label">Upload your CV</label>
+                            <input class="form-control" type="file" id="formFile" required>
+                        </div>
+                        <div class="col-12 form-check required">
+                            <input class="form-check-input" type="checkbox" value="" id="captcha" required>
+                            <label class="form-check-label" for="captcha">I am not a robot.</label>
+                        </div>
+                        <div class="col-12 form-check required">
+                            <input class="form-check-input" type="checkbox" value="" id="privacy" required>
+                            <label class="form-check-label" for="privacy">I agree to the <a href="#">privacy policy</a>.</label>
+                        </div>
+                        <div class="col-12 form-text text-end"><i>Fields marked with an <span style="color:red;">*</span> are required.</i></div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-primary">Apply</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer px-0 py-5 px-xl-5 text-center text-xl-start text-white" style="background-color: #2c3e50;">
+    <div class="container-fluid">
+        <div class="px-4 row">
+            <div class="col-xl-5 d-flex flex-column justify-content-around">
+                <a class="d-block d-xl-flex align-items-center logo " href="index.html">
+                    <img src="assets/images/logo transparent.png" alt="Logo" class="d-inline-block">
+                    <h1 class="d-inline-block">Hot Beans Web</h1>
+                </a>
+                <address class="d-block m-xl-0"><a class="address"
+                                                   href="https://www.google.com/maps/@52.578609,-0.239151,19z"
+                                                   target="_blank">75 Broadway<br>Peterborough<br>PE1 1SY</a></address>
+                <address class="d-block m-xl-0"><a class="phone" href="tel:+441733752255">01733 752255</a><br>
+                    <a class="email" href="mailto:contactus@hotbeansweb.co.uk">contactus@hotbeansweb.co.uk</a></address>
+            </div>
+            <div class="col-xl-7 justify-content-center">
+                <gmp-map center="52.578609466552734,-0.2391512244939804" zoom="14" map-id="DEMO_MAP_ID">
+                    <gmp-advanced-marker position="52.578609466552734,-0.2391512244939804"
+                                         title="My location"></gmp-advanced-marker>
+                </gmp-map>
+            </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center pt-4 mt-4 border-top">
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3">
+                    <a href="#" class="fa fa-facebook"></a>
+                </li>
+                <li class="ms-3">
+                    <a href="#" class="fa fa-twitter"></a>
+                </li>
+                <li class="ms-3">
+                    <a href="#" class="fa fa-instagram"></a>
+                </li>
+                <li class="ms-3">
+                    <a href="#" class="fa fa-linkedin"></a>
+                </li>
+            </ul>
+            <p class="text-center text-sm-end">© 2025 Hot Beans Web. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

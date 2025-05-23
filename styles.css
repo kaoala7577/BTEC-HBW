@@ -231,6 +231,34 @@ change this to change to 2 slides on small
     filter: brightness(0.8);
 }
 
+#designerJob p.collapse:not(.show),
+#developerJob p.collapse:not(.show){
+    height: 50vh;
+    overflow: hidden;
+
+    display: block;
+}
+
+#designerJob p.collapsing,
+#developerJob p.collapsing{
+    min-height: 50vh;
+}
+
+#designerJob a.collapsed:after,
+#developerJob a.collapsed:after{
+    content: 'Read More';
+}
+
+#designerJob a:not(.collapsed):after,
+#developerJob a:not(.collapsed):after {
+    content: 'Read Less';
+}
+
+.required > label:after {
+    content: "*";
+    color: red;
+}
+
 /*
 social media icons
 */
