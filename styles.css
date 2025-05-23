@@ -22,7 +22,7 @@ body {
 
 .logo h1 {
     color: white;
-    font-weight: bold;;
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
     margin: 0;
@@ -129,6 +129,7 @@ section {
 .quote:after,
 .phone:before,
 .email:before {
+    font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     text-shadow: rgba(52, 58, 64, 0.5) 1px 1px 2px;
     font-size: 17px;
