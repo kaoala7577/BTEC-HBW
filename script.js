@@ -112,5 +112,6 @@ if (teamModal) {
         modalTitle.textContent = newTitle + " - About me";
         modalDescription.innerHTML = newDescription;
         modalImage.src = newImage;
+        modalImage.alt = "An image of " + newTitle;
     });
 }
