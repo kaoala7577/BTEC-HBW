@@ -223,6 +223,14 @@ change this to change to 2 slides on small
     max-height: 125px;
 }
 
+.modal-hover > img {
+    transition: all .15s ease-in-out;
+}
+
+.modal-hover:hover > img {
+    filter: brightness(0.8);
+}
+
 /*
 social media icons
 */
